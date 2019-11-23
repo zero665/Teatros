@@ -4,7 +4,8 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-<?php session_start(); 
+<?php 
+session_start(); 
 
 ?>
 <html>
@@ -12,7 +13,7 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <title>Login</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        
+       
     </head>
     <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -27,10 +28,10 @@ and open the template in the editor.
         <a class="nav-link" href="#">Inicio</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Botón 1</a>
+        <a class="nav-link" href="#">Consultar Cartelera</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Botón 2</a>
+        <a class="nav-link" href="#">Comprar boletos</a>
       </li>
      
     </ul>

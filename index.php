@@ -1,6 +1,6 @@
 <?php
 require_once './includes/header.php';
-//hola
+
 ?>
 <head>
     <meta charset="utf-8">
