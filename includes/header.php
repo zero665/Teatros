@@ -27,12 +27,6 @@ session_start();
       <li class="nav-item active">
         <a class="nav-link" href="#">Inicio</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Consultar Cartelera</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Comprar boletos</a>
-      </li>
      
     </ul>
     
