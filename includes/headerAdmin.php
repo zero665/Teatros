@@ -44,10 +44,10 @@ if ($varsesion == null || $varsesion =='') {
         <a class="nav-link" href="#">Inicio</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Consultar Cartelera</a>
+        <a class="nav-link" href="#">Botón 1</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Comprar boletos</a>
+        <a class="nav-link" href="#">Botón 2</a>
       </li>
      
     </ul>
