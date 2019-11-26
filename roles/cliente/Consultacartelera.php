@@ -6,8 +6,9 @@ require_once '../../includes/headerCliente.php';
 
 <html>
     <head>
- 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  
 <style>
   /* Make the image fully responsive */
   .carousel-item {
@@ -19,6 +20,7 @@ require_once '../../includes/headerCliente.php';
     <div class="container">
         <div>
             <h5>Buscar espectaculo</h5>
+            <br/>
         </div>
         
     <form action="/action_page.php">
@@ -31,43 +33,65 @@ require_once '../../includes/headerCliente.php';
         </form>
         </div>
     
+    <div class="container">
+        <div class="container mt-3">
+
+        <h2>Obras de Teatro</h2>
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
-  <!-- Indicators -->
-  <ul class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-    <li data-target="#myCarousel" data-slide-to="3"></li>
-  </ul>
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+
+            </ul>
+
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./../../img/muer_risa.jpg" alt="Muerte" width="1100" height="500">
+                    <div class="carousel-caption">
+                        <h3>La Muerte Me Da Risa</h3>
+                        <p>La Compañia De Comedias</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./../../img/que_hace.jpg" alt="QueHace" width="1100" height="500">
+                    <div class="carousel-caption">
+                        <h3>¿Qué Hacéis Aquí?</h3>
+                        <p>Tiriteatreros</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./../../img/ric3.jpg" alt="Ricardo" width="1100" height="500">
+                    <div class="carousel-caption">
+                        <h3>Ricardo III</h3>
+                        <p>William Shakespeare</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./../../img/son_lag_music.jpg" alt="Sonrisas" width="1100" height="500">
+                    <div class="carousel-caption">
+                        <h3>Sonrisas y Lágrimas El Musical</h3>
+                        <p>Escuela de Actores Butaca 78</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+
+    </div>
+    </div>
   
-  <!-- The slideshow -->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="../../img/muer_risa.jpg" alt="Los Angeles" width="500" height="250">
-      
-    </div>
-    <div class="carousel-item ">
-      <img src="../../img/que_hace.jpg" alt="Chicago" width="500" height="250">
-     
-    </div>
-    <div class="carousel-item ">
-      <img src="../../img/ric3.jpg" alt="New York" width="500" height="250">
-      
-    </div>
-      <div class="carousel-item ">
-      <img src="../../img/son_lag_music.jpg" alt="New York" width="500" height="250">
-      
-    </div>
-  </div>
-  </div>
-  <!-- Left and right controls -->
-  <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </a>
-  <a class="carousel-control-next" href="#myCarousel" data-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </a>
  <div class="container">
   <h2>Selecciona un espectaculo</h2>
   
