@@ -44,11 +44,9 @@ if ($varsesion == null || $varsesion =='') {
         <a class="nav-link" href="#">Inicio</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Teatros</a>
+        <a class="nav-link" href="#">Funciones</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Botón 2</a>
-      </li>
+      
      
     </ul>
       <form action="./../../control/CerrarSesion.php">
