@@ -1,5 +1,5 @@
 <?php
-require_once './../../includes/header1.php';
+require_once './../../includes/headerAdmin.php';
 ?>
 <?php
  $servidor = "localhost";
