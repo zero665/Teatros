@@ -28,7 +28,12 @@ if (!$db) {
        $sql = "select rol from usuarios where usuario='$correo' and contrasenia='$contra'";
     $result = $db->query($sql);
     $row = $result->fetch_row(); 
-   header("location:/Teatros/roles/$row[0]/Bienvenido.php");
+    if ($row[0]=="cliente") {
+         header("location:/Teatros/roles/cliente/Consultacartelera.php");
+    }else if ($row[0]=="administrador") {
+        header("location:/Teatros/roles/administrador/Bienvenido.php");
+    }
+  
 //echo "$row[0] <br/>soy la sesion: $varsesion";
    }else{
       

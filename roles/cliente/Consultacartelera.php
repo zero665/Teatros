@@ -2,7 +2,17 @@
 
 <?php
 require_once '../../includes/headerCliente.php';
-?>
+ $servidor = "localhost";
+$usuarioBD="root";
+$pwdBD="";
+$nomBD="teatros";
+
+$db= mysqli_connect($servidor, $usuarioBD, $pwdBD, $nomBD);
+    $usuario = $_SESSION['usu'];
+   $sql = "select nombre, apellido from registrados where usuario='$usuario'";
+   $result = $db->query($sql);
+    $row = $result->fetch_row(); 
+    ?>
 
 <html>
     <head>
@@ -17,21 +27,13 @@ require_once '../../includes/headerCliente.php';
   </style>
 </head>
 <body>
+    
     <div class="container">
-        <div>
-            <h5>Buscar espectaculo</h5>
-            <br/>
-        </div>
-        
-    <form action="/action_page.php">
-    <div class="input-group">
-      <input type="text" class="form-control" placeholder="Search" name="search">
-      <div class="input-group-btn">
-        <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-      </div>
+         <h1 class="text-center">Bienvenido Cliente <?php echo $row[0]." ".$row[1]; ?></h1>
+         <br>
+         <hr>
     </div>
-        </form>
-        </div>
+    
     
     <div class="container">
         <div class="container mt-3">
@@ -128,9 +130,23 @@ require_once '../../includes/headerCliente.php';
     </div>
   </form>
 </div>
-
+    <a id="c2">muestra algo</a>
+    <div id="cont1">
+        <h1>Me muestro</h1>
+    </div>
   
 </body>
+
+<script>
+    
+$("#c2").click(function() {
+$("#cont1").show("slow");
+});
+
+$("#c1").click(function() {
+$("#cont1").hide(1500);
+});
+</script>
 </html>
 
 <?php
