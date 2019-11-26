@@ -44,7 +44,7 @@ if ($varsesion == null || $varsesion =='') {
         <a class="nav-link" href="#">Inicio</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Funciones</a>
+          <a class="nav-link" href="./../roles/cliente/Consultacartelera.php">Cartelera</a>
       </li>
       
      
