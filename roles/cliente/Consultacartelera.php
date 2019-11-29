@@ -24,6 +24,25 @@ $db= mysqli_connect($servidor, $usuarioBD, $pwdBD, $nomBD);
   .carousel-item {
     align-content: center;
   }
+  #left{
+      float: left;
+      width: 50%;
+      height: 50%
+          
+  }
+  #right{
+      float: right;
+      width: 50%;
+      height: 50%
+  }
+  #main{
+      width: 100%;
+      border: 1px solid  #f44336;
+  }
+  #footer{
+      
+   
+  }
   </style>
 </head>
 <body>
@@ -94,46 +113,66 @@ $db= mysqli_connect($servidor, $usuarioBD, $pwdBD, $nomBD);
     </div>
     </div>
   
- <div class="container">
+    <div class="container" >
   <h2>Selecciona un espectaculo</h2>
   
   <form>
     <div class="form-group">
         <br>
       <label for="sel1">Lista de espectaculos:</label>
+      <?php 
+      include '../../control/conecta.php';
+        if($db)
+            {
+           $sql = "select * from espectaculo";
+           $result = mysqli_query($db, $sql);
+           if (mysqli_num_rows($result) > 0) {
+           while($row = mysqli_fetch_assoc($result)) {    
+            ?>
       <select class="form-control" id="sel1">
-        <option>Muere de risa</option>
-        <option>Que haces</option>
-        <option>Rico</option>
-        <option>Musical</option>
+          <option> </option>
+          <option><?php echo $row["nombre"];?></option>
+         
+        <?php
+           }
+           }
+           } 
+           ?>
       </select>
       <br><br>
       
-      <h3>Selecciona un teatro</h3>
-      <label for="sel12">Lista de teatros:</label>
-      <select class="form-control" id="sel12">
-        <option>Muere de risa</option>
-        <option>Que haces</option>
-        <option>Rico</option>
-        <option>Musical</option>
-      </select>
-      <br><br>
       
-      <h4>Selecciona tu horario disponible</h4>
-      <label for="sel13">Horarios disponibles:</label>
-      <select class="form-control" id="sel13">
-        <option>Muere de risa</option>
-        <option>Que haces</option>
-        <option>Rico</option>
-        <option>Musical</option>
-      </select>
     </div>
+      <div>
+          <div class="row">
+              <div class="col">
+              <table>
+                  <thead>
+                  <th><h2>Detalles funcion</h2></th>
+                  </thead>
+                  <tbody>
+                      
+                  <tr><td>Titulo: </td><br></tr>
+                  <tr><td>Elenco: </td><br></tr>
+                  <tr><td>Protagonista: </td><br></tr>
+                  <tr><td>Tipo: </td><br></tr>
+                  <tr><td>Hora: </td><br></tr>
+                  <tr><td>Fecha: </td><br></tr>
+                  <tr><td>Sinopsis: </td><br></tr>
+                  
+                  
+                  </tbody>
+              </table>
+          </div>
+              <div class="col" >
+              <img  style=" width: 51%" src="../../img/muer_risa.jpg" alt=""/>
+              
+          </div>
+      </div>
+      </div>
   </form>
 </div>
-    <a id="c2">muestra algo</a>
-    <div id="cont1">
-        <h1>Me muestro</h1>
-    </div>
+   
   
 </body>
 
@@ -147,8 +186,10 @@ $("#c1").click(function() {
 $("#cont1").hide(1500);
 });
 </script>
-</html>
 
+<footer>
 <?php
 require_once '../../includes/footer.php';
 ?>
+</footer>
+</html>

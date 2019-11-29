@@ -18,7 +18,7 @@ if ($varsesion == null || $varsesion =='') {
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Login</title>
+        <title>Bienvenido</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <style>
             #cs{
@@ -44,7 +44,7 @@ if ($varsesion == null || $varsesion =='') {
         <a class="nav-link" href="#">Inicio</a>
       </li>
       <li class="nav-item">
-          <a class="nav-link" href="./../cliente/Consultacartelera.php">Cartelera</a>
+          <a class="nav-link" href="./../cliente/Consultacartelera.php">Comprar boletos</a>
       </li>
       
      
