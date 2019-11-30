@@ -120,6 +120,7 @@ $db= mysqli_connect($servidor, $usuarioBD, $pwdBD, $nomBD);
     <div class="form-group">
         <br>
       <label for="sel1">Lista de espectaculos:</label>
+      <select class="form-control" id="sel1">
       <?php 
       include '../../control/conecta.php';
         if($db)
@@ -127,9 +128,12 @@ $db= mysqli_connect($servidor, $usuarioBD, $pwdBD, $nomBD);
            $sql = "select * from espectaculo";
            $result = mysqli_query($db, $sql);
            if (mysqli_num_rows($result) > 0) {
-           while($row = mysqli_fetch_assoc($result)) {    
+           $rowcount=mysqli_num_rows($result);
+           
+           for($i=0;$i<=$rowcount;$i++) {   
+             $row = mysqli_fetch_assoc($result);  
             ?>
-      <select class="form-control" id="sel1">
+      
           <option> </option>
           <option><?php echo $row["nombre"];?></option>
          
@@ -146,23 +150,21 @@ $db= mysqli_connect($servidor, $usuarioBD, $pwdBD, $nomBD);
       <div>
           <div class="row">
               <div class="col">
+                
               <table>
+                  
                   <thead>
                   <th><h2>Detalles funcion</h2></th>
                   </thead>
                   <tbody>
                       
-                  <tr><td>Titulo: </td><br></tr>
-                  <tr><td>Elenco: </td><br></tr>
-                  <tr><td>Protagonista: </td><br></tr>
-                  <tr><td>Tipo: </td><br></tr>
-                  <tr><td>Hora: </td><br></tr>
-                  <tr><td>Fecha: </td><br></tr>
-                  <tr><td>Sinopsis: </td><br></tr>
-                  
-                  
+                      <tr><td>Titulo: </td><br></tr>
+                  <tr><td>Elenco:  </td><br></tr>
+                  <tr><td>Director:</td><br></tr>
+                
                   </tbody>
               </table>
+                    
           </div>
               <div class="col" >
               <img  style=" width: 51%" src="../../img/muer_risa.jpg" alt=""/>
