@@ -31,7 +31,7 @@ if (!$db) {
     if ($row[0]=="cliente") {
          header("location:/Teatros/roles/cliente/Consultacartelera.php");
     }else if ($row[0]=="administrador") {
-        header("location:/Teatros/roles/administrador/Bienvenido.php");
+        header("location:/Teatros/roles/administrador/CreaFuncion.php");
     }
   
 //echo "$row[0] <br/>soy la sesion: $varsesion";
