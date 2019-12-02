@@ -66,138 +66,137 @@ $row = $result->fetch_row();
             <a href="#"><button type="button" class="btn btn-outline-success">Generar todos los boletos</button></a><br><br><br>
             <h3>Generar Boletos por Zona</h3><br>
             <h3 class="text-center" style="background-color: gold; height: 50px; font-size: 40px;">Zona Oro</h3>
-            <form action="/action_page.php">
-                <select name="cars">
-                    <option value="volvo">1</option>
-                    <option value="saab">2</option>
-                    <option value="fiat">3</option>
-                    <option value="audi">4</option>
-                    <option value="audi">5</option>
-                    <option value="volvo">6</option>
-                    <option value="saab">7</option>
-                    <option value="fiat">8</option>
-                    <option value="audi">9</option>
-                    <option value="audi">10</option>
-                    <option value="volvo">11</option>
-                    <option value="saab">12</option>
-                    <option value="fiat">13</option>
-                    <option value="audi">14</option>
-                    <option value="audi">15</option>
-                    <option value="volvo">16</option>
-                    <option value="saab">17</option>
-                    <option value="fiat">18</option>
-                    <option value="audi">19</option>
-                    <option value="audi">20</option>
-                    <option value="volvo">21</option>
-                    <option value="saab">22</option>
-                    <option value="fiat">23</option>
-                    <option value="audi">24</option>
-                    <option value="audi">25</option>
-                    <option value="volvo">26</option>
-                    <option value="saab">27</option>
-                    <option value="fiat">28</option>
-                    <option value="audi">29</option>
-                    <option value="audi">30</option>
+            <form action="./../../control/generaboletos.php" method="post">
+                <select name="oro">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
 
                 </select>
                 <br><br>
-                <a href="#"><button class="btn btn-outline-success" type="button">Aceptar</button></a>
-            </form>
+               
+              
             <br>
             <h3 class="text-center" style="background-color: silver; height: 50px; font-size: 40px;">Zona Plata</h3>
-            <form>
-                <select name="cars">
-                    <option value="volvo">1</option>
-                    <option value="saab">2</option>
-                    <option value="fiat">3</option>
-                    <option value="audi">4</option>
-                    <option value="audi">5</option>
-                    <option value="volvo">6</option>
-                    <option value="saab">7</option>
-                    <option value="fiat">8</option>
-                    <option value="audi">9</option>
-                    <option value="audi">10</option>
-                    <option value="volvo">11</option>
-                    <option value="saab">12</option>
-                    <option value="fiat">13</option>
-                    <option value="audi">14</option>
-                    <option value="audi">15</option>
-                    <option value="volvo">16</option>
-                    <option value="saab">17</option>
-                    <option value="fiat">18</option>
-                    <option value="audi">19</option>
-                    <option value="audi">20</option>
-                    <option value="volvo">21</option>
-                    <option value="saab">22</option>
-                    <option value="fiat">23</option>
-                    <option value="audi">24</option>
-                    <option value="audi">25</option>
-                    <option value="volvo">26</option>
-                    <option value="saab">27</option>
-                    <option value="fiat">28</option>
-                    <option value="audi">29</option>
-                    <option value="audi">30</option>
+            
+                <select name="plata">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
                 </select>
                 <br><br>
-                <a href="#"><button class="btn btn-outline-success" type="button">Aceptar</button></a>
-            </form>
+            
             <br>
             <h3 class="text-center" style="background-color: pink; height: 50px; font-size: 40px;">Zona General</h3>
             <form>
-                <select name="cars">
-                    <option value="volvo">1</option>
-                    <option value="saab">2</option>
-                    <option value="fiat">3</option>
-                    <option value="audi">4</option>
-                    <option value="audi">5</option>
-                    <option value="volvo">6</option>
-                    <option value="saab">7</option>
-                    <option value="fiat">8</option>
-                    <option value="audi">9</option>
-                    <option value="audi">10</option>
-                    <option value="volvo">11</option>
-                    <option value="saab">12</option>
-                    <option value="fiat">13</option>
-                    <option value="audi">14</option>
-                    <option value="audi">15</option>
-                    <option value="volvo">16</option>
-                    <option value="saab">17</option>
-                    <option value="fiat">18</option>
-                    <option value="audi">19</option>
-                    <option value="audi">20</option>
-                    <option value="volvo">21</option>
-                    <option value="saab">22</option>
-                    <option value="fiat">23</option>
-                    <option value="audi">24</option>
-                    <option value="audi">25</option>
-                    <option value="volvo">26</option>
-                    <option value="saab">27</option>
-                    <option value="fiat">28</option>
-                    <option value="audi">29</option>
-                    <option value="audi">30</option>
-                    <option value="volvo">31</option>
-                    <option value="saab">32</option>
-                    <option value="fiat">33</option>
-                    <option value="audi">34</option>
-                    <option value="audi">35</option>
-                    <option value="volvo">36</option>
-                    <option value="saab">37</option>
-                    <option value="fiat">38</option>
-                    <option value="audi">39</option>
-                    <option value="audi">40</option>
-                    <option value="volvo">41</option>
-                    <option value="saab">42</option>
-                    <option value="fiat">43</option>
-                    <option value="audi">44</option>
-                    <option value="audi">45</option>
-                    <option value="volvo">46</option>
-                    <option value="saab">47</option>
-                    <option value="fiat">48</option>
-                    <option value="audi">49</option>
-                    <option value="audi">50</option>
+                <select name="general">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                    <option value="32">32</option>
+                    <option value="33">33</option>
+                    <option value="34">34</option>
+                    <option value="35">35</option>
+                    <option value="36">36</option>
+                    <option value="37">37</option>
+                    <option value="38">38</option>
+                    <option value="39">39</option>
+                    <option value="40">40</option>
+                    <option value="41">41</option>
+                    <option value="42">42</option>
+                    <option value="43">43</option>
+                    <option value="44">44</option>
+                    <option value="45">45</option>
+                    <option value="46">46</option>
+                    <option value="47">47</option>
+                    <option value="48">48</option>
+                    <option value="49">49</option>
+                    <option value="50">50</option>
                 </select>
                 <br><br>
-                <a href="#"><button class="btn btn-outline-success" type="button">Aceptar</button></a>
+               <input type="submit">
             </form>
             <br>
         </div>
