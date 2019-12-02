@@ -40,7 +40,7 @@
     </script>
     </head>
     <body>
-        <form method="post" action="CrearFuncion.php">
+        <form action="./control/QueryCrearFuncion.php" method="post">
                 <h1>Administrador - Cartelera de funciones</h1>
         <div class="container">
             <table class="table table-dark">
@@ -78,15 +78,6 @@
                                     <option value="metepec">Metepec</option>
                                     <option value="cdmx">CDMX</option>
                                  </select>
-                             Elegir tipo de espectáculo:
-                             <select name="tipoespect" class="custom-select mb-3">
-                               <option selected>Tipo de espectáculo</option>
-                               <option value="tragedia">Tragedia</option>
-                               <option value="comedia">Comedia</option>
-                               <option value="satira">Sátira</option>
-                               <option value="melodrama">Melodrama</option>
-                               <option value="monologo">Monólogo</option>
-                             </select>
                              Elenco del espectáculo: <br>
                              <textarea name="elenco" rows="10" cols="35"></textarea>
                              <br>
@@ -97,7 +88,7 @@
                              <input type="file" name="file-input" id="file-input"/>
                              <br>
                              Vista previa:
-                             <img id="posterSalida" width="400" height="500" src="" />
+                             <img id="posterSalida" width="300" height="400" src="" />
                              <br>
                              <input type="submit"  onclick="alert('Función creada, ahora generar boletos')" class="btn btn-success" value="Confirmar" name="btnConfirmar" />
                              
