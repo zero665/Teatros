@@ -1,3 +1,6 @@
+<?php
+require_once './../../includes/headerAdmin.php';
+?>
 <!DOCTYPE html>
 
 <html>
@@ -60,7 +63,7 @@
                         <th><input type="button" class="btn btn-success" data-toggle="collapse" data-target="#agregar" value="Agregar Función" name="btnAgregar" />
                          <div id="agregar" class="collapse">
                              <br>
-                             <form>
+                             
                              Nombre del espectáculo:
                                  <input name="espectaculo" type="text" class="mb-3">
                                  <br>
@@ -78,12 +81,14 @@
                                     <option value="metepec">Metepec</option>
                                     <option value="cdmx">CDMX</option>
                                  </select>
+                             Director: 
+                             <input name="director" type="text" class="mb-3"><br>
                              Elenco del espectáculo: <br>
                              <textarea name="elenco" rows="10" cols="35"></textarea>
                              <br>
                              Breve descripción del espectáculo: <br>
                              <textarea name="descripcion" rows="10" cols="35"></textarea>
-                             </form>
+                             
                              Inserta póster del espectáculo:
                              <input type="file" name="file-input" id="file-input"/>
                              <br>
@@ -104,3 +109,6 @@
         ?>
     </body>
 </html>
+<?php
+require_once './../../includes/footer.php';
+?>
