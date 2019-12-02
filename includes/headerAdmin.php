@@ -40,6 +40,9 @@ if ($varsesion == null || $varsesion =='') {
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="./../roles/administrador/generaBoletos.php">Link</a>
+      </li>
     </ul>
       <form action="./../../control/CerrarSesion.php">
           <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Cerrar Sesión</button>

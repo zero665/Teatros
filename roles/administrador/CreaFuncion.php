@@ -104,6 +104,7 @@ require_once './../../includes/headerAdmin.php';
                 </thead>
             </table>
             </form>
+        <a href="./generaBoletos.php"><button type="button">Generar Boleto</button></a>
         <?php
         include ("ConsultaAdministrador.php");
         ?>

@@ -23,9 +23,36 @@ if (!$db) {
     echo "falló";
 }else{
     echo 'entró';
+    echo $oro.' '.$plata.' '.$general;
       mysqli_query($db, "SET NAMES 'UTF8'");
-    $sql= " INSERT INTO boleto VALUES (null, 1,1,'a-1','ocupado',1,'$oro',750,	2019-12-25,14:00:00 );";
+      
+      for ($i = 1; $i <= 10; $i++) {
+
+          $sql= " INSERT INTO boleto VALUES (null, 1,1,'A-$i','ocupado',1,'$oro',750,	2019-12-25,14:00:00 );";
    $resultado= mysqli_query($db, $sql);
-echo $resultado;
+   if ($resultado) {
+       echo"si insertó en oro";
+   }
+      }
+      
+       for ($i = 1; $i <= 10; $i++) {
+
+          $sql= " INSERT INTO boleto VALUES (null, 1,1,'A-$i','ocupado',1,'$oro',750,	2019-12-25,14:00:00 );";
+   $resultado= mysqli_query($db, $sql);
+   if ($resultado) {
+       echo"si insertó en plata";
+   }
+      }
+      
+       for ($i = 1; $i <= 10; $i++) {
+
+          $sql= " INSERT INTO boleto VALUES (null, 1,1,'A-$i','ocupado',1,'$oro',750,	2019-12-25,14:00:00 );";
+   $resultado= mysqli_query($db, $sql);
+   if ($resultado) {
+       echo"si insertó en general";
+   }
+      }
+      
+      header("location:/Teatros/roles/administrador/CreaFuncion.php");
     }
   
